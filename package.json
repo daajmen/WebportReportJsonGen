@@ -1,12 +1,14 @@
 {
-  "name": "electron-json-editor",
+  "name": "WebportReportJsonGen",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . WebportReportJsonGenerator --platform=win32 --arch=x64 --out=release-builds --overwrite"    
   },
   "devDependencies": {
-    "electron": "^latest-version"
+    "electron": "^26.2.0",
+    "electron-packager": "^17.1.2"
   }
 }
